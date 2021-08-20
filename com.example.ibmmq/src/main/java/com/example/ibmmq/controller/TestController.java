@@ -19,7 +19,7 @@ public class TestController {
 	  public String sendMessage(){
 	      try{
 	    	  String msg="IBM MQ integration testing with spring boot";
-	          jmsTemplate.convertAndSend("Q_Name", msg);
+	          jmsTemplate.convertAndSend("LQ1", msg);
 	          System.out.println("Message Sent :"+msg);
 	          return "OK";
 	      }catch(JmsException ex){
@@ -31,7 +31,7 @@ public class TestController {
 	  @RequestMapping("recv")
 	  public String receiveMessage(){
 	      try{
-	    	  String msgRecevd=jmsTemplate.receiveAndConvert("Q_Name").toString();
+	    	  String msgRecevd=jmsTemplate.receiveAndConvert("LQ1").toString();
 	    	  System.out.println("Message Received :"+ msgRecevd);
 	          return msgRecevd;
 	          
