@@ -1,0 +1,83 @@
+1. What is latest version of MQ ? its features ? 
+ans :  v9.2
+	https://www.ibm.com/docs/en/ibm-mq/9.2?topic=920-whats-new-in-mq
+	
+2. how can application connect to MQ / variaus ways to connect IBM MQ QMGR ? 
+ans : https://www.ibm.com/docs/en/ibm-mq/9.2?topic=mq-introduction
+
+3. What is connection factory ? its varius types ? 
+ans : 
+
+4. communication pattern in MQ ?
+ans : P1P and pub sub 
+
+5. p1p vs pub sub diff ? 
+
+6. how to route msg to exact destination using pub sub ? 
+
+7. BOQ and DLQ ?
+
+
+8. what happen if you delete qm.ini file ?
+Ans : https://www.ibm.com/docs/en/ibm-mq/9.0?topic=windows-queue-manager-configuration-files-qmini
+
+9. logging in MQ and its impact on performance ? 
+Ans : 
+
+
+10. how to achieve LB in MQ ?  varius ways to perform same ?  Differences between multi-instance queue managers and HA clusters? multi instance setup in MQ ? 
+Ans :  https://www.ibm.com/docs/en/ibm-mq/7.5?topic=restart-high-availability-configurations
+
+Multi-instance queue managers include the following features:
+	Basic failover support integrated into WebSphere MQ
+	Faster failover than HA cluster
+	Simple configuration and operation
+	Integration with WebSphere MQ Explorer
+
+Limitations of multi-instance queue managers include:
+	Highly available, high performance networked storage required
+	More complex network configuration because queue manager changes IP address when it fails over
+
+
+11. how to you figure or find which QMGR is holding full repo in cluster ? 
+Ans : https://www.ibm.com/docs/en/ibm-mq/7.5?topic=cluster-managing-websphere-mq-clusters
+https://www.ibm.com/docs/en/ibm-mq/7.5?topic=clusters-adding-queue-manager-cluster
+https://www.ibm.com/docs/en/ibm-mq/7.5?topic=clusters-removing-queue-manager-from-cluster
+
+12. if full repo QMGR fails down , how you will recover it ?
+https://www.ibm.com/docs/en/ibm-mq/7.5?topic=cluster-managing-websphere-mq-clusters
+
+13. how to implement security in MQ (OAM, CHLAuth , SSL )?
+ans : https://www.ibm.com/docs/en/ibm-mq/9.0?topic=overview-mq-security-mechanisms
+
+14. IBM MQ SSL setup ? certificate renewal process ? 
+Ans : https://www.youtube.com/watch?v=UnVbz_2u9L8  
+https://blog.niklasottosson.com/java/setup-ibm-mq-v9-for-java-clients-over-ssl/
+https://www.ibm.com/mysupport/s/question/0D50z00005phsz1/how-to-renew-websphere-mq-ssl-certificates?language=en_US
+https://www.ibm.com/mysupport/s/question/0D50z00005phtyGCAQ/how-to-renew-a-certificate-that-is-about-to-expire-in-ibm-mq?language=en_US
+
+15. cluster queue and its usage ? 
+
+16. what is event monitoring in MQ ? its attributes ?
+Ans : Search in google 
+http://www.setgetweb.com/p/WAS51/MQ/event_monitoring/event.html
+
+17. cold restart in QMGR ? 
+Ans :
+If your enterprise loses some or all of the log extents needed for restart recovery, the queue manager will be unable to replay the recovery log and so fails to restart. ... This process is known as coldstarting a queue manager.
+
+18. how to recover deleted MQ objects ? 
+
+
+19. what are backup files present after QMGR defined ? 
+
+
+20. what is namelist and when you will use it ?
+
+
+21. Can we have QMGr without DL queue configured ? 
+
+22. channel triggering ? 
+Ans :  MQ provides a facility for starting an application automatically when certain conditions on a queue are met. This facility is called triggering
+https://www.ibm.com/docs/en/ibm-mq/7.5?topic=management-triggering-channels
+
