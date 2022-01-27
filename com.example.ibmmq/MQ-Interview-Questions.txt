@@ -1,4 +1,4 @@
-1. What is latest version of MQ ? its features ? 
+1. What is latest version of MQ ? its features ?  
 ans :  v9.2
 	https://www.ibm.com/docs/en/ibm-mq/9.2?topic=920-whats-new-in-mq
 	
